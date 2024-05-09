@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "mycraftessentials",
+	"version": "${version}",
+	"name": "MyCraftEssentials",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mycraftessentials/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cafe.seafarers.MyCraftEssentials"
+		],
+		"client": [
+			"cafe.seafarers.MyCraftEssentialsClient"
+		],
+		"fabric-datagen": [
+			"cafe.seafarers.MyCraftEssentialsDataGenerator"
+		]
+	},
+	"mixins": [
+		"mycraftessentials.mixins.json",
+		{
+			"config": "mycraftessentials.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

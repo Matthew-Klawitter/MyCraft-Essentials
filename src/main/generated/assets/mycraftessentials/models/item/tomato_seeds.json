@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mycraftessentials:item/tomato_seeds"
+  }
+}
